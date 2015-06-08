@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layoutMainActivity">
+
+        <TextView
+            android:text="@string/activity_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMainActivityTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/abc_text_size_title_material" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_spotifystreamer_title"
+            android:id="@+id/btnSpotifyStreamer"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/txtMainActivityTitle"
+            android:layout_alignRight="@+id/btnCapstone"
+            android:layout_alignEnd="@+id/btnCapstone"
+            android:layout_alignLeft="@+id/btnCapstone"
+            android:layout_alignStart="@+id/btnCapstone"
+            android:onClick="btnSpotifyStreamer_Clicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_scores_title"
+            android:id="@+id/btnScores"
+            android:layout_below="@+id/btnSpotifyStreamer"
+            android:layout_alignRight="@+id/btnCapstone"
+            android:layout_alignEnd="@+id/btnCapstone"
+            android:layout_alignLeft="@+id/btnCapstone"
+            android:layout_alignStart="@+id/btnCapstone"
+            android:onClick="btnScores_Clicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_library_title"
+            android:id="@+id/btnLibrary"
+            android:layout_below="@+id/btnScores"
+            android:layout_alignRight="@+id/btnCapstone"
+            android:layout_alignEnd="@+id/btnCapstone"
+            android:layout_alignLeft="@+id/btnCapstone"
+            android:layout_alignStart="@+id/btnCapstone"
+            android:onClick="btnLibrary_Clicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_buildbigger_title"
+            android:id="@+id/btnBuildBigger"
+            android:layout_below="@+id/btnLibrary"
+            android:layout_alignLeft="@+id/btnCapstone"
+            android:layout_alignStart="@+id/btnCapstone"
+            android:layout_alignRight="@+id/btnCapstone"
+            android:layout_alignEnd="@+id/btnCapstone"
+            android:onClick="btnBuildBigger_Clicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_xyzreader_title"
+            android:id="@+id/btnXyzReader"
+            android:layout_below="@+id/btnBuildBigger"
+            android:layout_alignLeft="@+id/btnCapstone"
+            android:layout_alignStart="@+id/btnCapstone"
+            android:layout_alignRight="@+id/btnCapstone"
+            android:layout_alignEnd="@+id/btnCapstone"
+            android:onClick="btnXyzReader_Clicked" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_capstone_title"
+            android:id="@+id/btnCapstone"
+            android:layout_below="@+id/btnXyzReader"
+            android:layout_centerHorizontal="true"
+            android:onClick="btnCapstone_Clicked" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
